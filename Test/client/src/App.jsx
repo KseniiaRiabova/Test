@@ -4,12 +4,6 @@ import DisplayData from './pages/DisplayData.jsx';
 import './App.css';
 
 function App() {
-  useEffect(() => {
-    fetch('https://betest-d6i8.onrender.com')
-      .then((res) => res.json())
-      .then((data) => setMessage(data.message));
-  }, []);
-
   return (
     <>
       <BrowserRouter>
