@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: 'https://fetest2-d2n9.onrender.com',
+    origin: 'https://fetest2-d2n9.onrender.com/',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   })
