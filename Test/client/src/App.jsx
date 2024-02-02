@@ -7,7 +7,7 @@ import './App.css';
 function App() {
   const [message, setMessage] = useState('');
   useEffect(() => {
-    fetch('https://betest-d6i8.onrender.com/')
+    fetch('https://fetest2-d2n9.onrender.com')
       .then((res) => res.json())
       .then((data) => setMessage(data.message));
   }, []);
