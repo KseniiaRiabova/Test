@@ -5,6 +5,7 @@ import DisplayData from './pages/DisplayData.jsx';
 import './App.css';
 
 function App() {
+  const [message, setMessage] = useState('');
   useEffect(() => {
     fetch('https://betest-d6i8.onrender.com')
       .then((res) => res.json())
