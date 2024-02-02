@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import DisplayData from './pages/DisplayData.jsx';
