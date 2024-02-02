@@ -8,11 +8,13 @@ const PORT = process.env.PORT || 3003;
 
 app.use(express.json());
 
-app.use(cors({
-  origin: 'http://localhost:5173',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-}));
+app.use(
+  cors({
+    origin: 'https://fetest2-d2n9.onrender.com',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+  })
+);
 
 app.use('/api/currencies', currenciesRoute);
 app.use('/api/global', globalRoute);
